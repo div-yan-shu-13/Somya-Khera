@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Career Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+        #results {
+            margin-top: 20px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .career-card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Explore Your Career Path</h1>
+
+    <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Enter career field..." required>
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
